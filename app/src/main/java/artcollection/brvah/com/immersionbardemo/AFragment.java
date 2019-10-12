@@ -51,7 +51,7 @@ public class AFragment extends BaseFragment {
 //        mRecyclerView.setBackgroundColor(ContextCompat.getColor(getContext(),R.color.gray_EEEEEE));
         for (int i = 0; i < 20; i++) {
             ShopBean item = new ShopBean();
-            item.setTitle("测试标题cecececececec" + i);
+            item.setTitle("测试标题cecec" + i);
             mAdapter.addData(item);
         }
 
