@@ -1,141 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mainLayout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:clipChildren="false"
-    android:background="#fcfcfc" >
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
     <RelativeLayout
-        android:id="@+id/fragment_container"
+
+        android:id="@+id/mainLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="52dp"/>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#E6E6E6"
-        android:layout_marginBottom="52dp"
-        android:layout_alignParentBottom="true"/>
-    <View
-        android:layout_width="54dp"
-        android:layout_height="70dp"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/shape_main_add_bg"/>
-    <LinearLayout
-        android:id="@+id/main_bottom"
-        android:layout_width="match_parent"
-        android:layout_height="52dp"
         android:clipChildren="false"
-        android:layout_alignParentBottom="true"
-        android:background="#FFFFFF"
-        android:gravity="center_horizontal|bottom"
-        android:orientation="horizontal"
-        tools:ignore="DisableBaselineAlignment">
-
+        android:background="#fcfcfc" >
         <RelativeLayout
-            android:id="@+id/btn_container1"
-            android:layout_width="0dp"
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1" >
-            <Button
-                android:id="@+id/btn1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@null"
-                android:drawableTop="@drawable/tab_main_home_bg"
-                android:onClick="onTabClicked"
-                android:paddingBottom="2dp"
-                android:paddingTop="5dp"
-                android:scaleType="matrix"
-                android:text="首页"
-                android:textColor="@color/main_botton_text_color"
-                android:textSize="12sp" />
-        </RelativeLayout>
-        <RelativeLayout
-            android:id="@+id/btn_container2"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" >
-
-            <Button
-                android:id="@+id/btn2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@null"
-                android:drawableTop="@drawable/tab_main_circle_bg"
-                android:onClick="onTabClicked"
-                android:paddingBottom="2dp"
-                android:paddingTop="5dp"
-                android:scaleType="matrix"
-                android:text="藏友圈"
-                android:textColor="@color/main_botton_text_color"
-                android:textSize="12sp" />
-        </RelativeLayout>
-        <RelativeLayout
-            android:id="@+id/btn_container3"
-            android:layout_width="0dp"
+            android:layout_marginBottom="52dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E6E6E6"
+            android:layout_marginBottom="52dp"
+            android:layout_alignParentBottom="true"/>
+        <View
+            android:layout_width="54dp"
             android:layout_height="70dp"
-            android:layout_weight="1" >
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_main_add_bg"/>
+        <LinearLayout
+            android:id="@+id/main_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:clipChildren="false"
+            android:layout_alignParentBottom="true"
+            android:background="#FFFFFF"
+            android:gravity="center_horizontal|bottom"
+            android:orientation="horizontal"
+            tools:ignore="DisableBaselineAlignment">
 
-            <Button
-                android:id="@+id/btn3"
-                android:layout_width="match_parent"
+            <RelativeLayout
+                android:id="@+id/btn_container1"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:background="@null"
-                android:drawableTop="@drawable/art_main_add_publish_default"
-                android:onClick="onAddTabClicked"
-                android:paddingBottom="2dp"
-                android:paddingTop="5dp"
-                android:scaleType="matrix"
-                android:text="发布"
-                android:textColor="@color/main_botton_text_color"
-                android:textSize="12sp" />
-        </RelativeLayout>
-        <RelativeLayout
-            android:id="@+id/btn_container4"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" >
-
-            <Button
-                android:id="@+id/btn4"
-                android:layout_width="match_parent"
+                android:layout_weight="1" >
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:drawableTop="@drawable/tab_main_home_bg"
+                    android:onClick="onTabClicked"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="5dp"
+                    android:scaleType="matrix"
+                    android:text="首页"
+                    android:textColor="@color/main_botton_text_color"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btn_container2"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:background="@null"
-                android:drawableTop="@drawable/tab_main_auction_bg"
-                android:onClick="onTabClicked"
-                android:paddingBottom="2dp"
-                android:paddingTop="5dp"
-                android:scaleType="matrix"
-                android:text="消息"
-                android:textColor="@color/main_botton_text_color"
-                android:textSize="12sp" />
-        </RelativeLayout>
-        <RelativeLayout
-            android:id="@+id/btn_container5"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" >
+                android:layout_weight="1" >
 
-            <Button
-                android:id="@+id/btn5"
-                android:layout_width="match_parent"
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:drawableTop="@drawable/tab_main_circle_bg"
+                    android:onClick="onTabClicked"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="5dp"
+                    android:scaleType="matrix"
+                    android:text="藏友圈"
+                    android:textColor="@color/main_botton_text_color"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btn_container3"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:drawableTop="@drawable/art_main_add_publish_default"
+                    android:onClick="onAddTabClicked"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="5dp"
+                    android:scaleType="matrix"
+                    android:text="发布"
+                    android:textColor="@color/main_botton_text_color"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btn_container4"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:background="@null"
-                android:drawableTop="@drawable/tab_main_mine_bg"
-                android:onClick="onTabClicked"
-                android:paddingBottom="2dp"
-                android:paddingTop="5dp"
-                android:scaleType="matrix"
-                android:text="我的"
-                android:textColor="@color/main_botton_text_color"
-                android:textSize="12sp" />
-        </RelativeLayout>
-    </LinearLayout>
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:drawableTop="@drawable/tab_main_auction_bg"
+                    android:onClick="onTabClicked"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="5dp"
+                    android:scaleType="matrix"
+                    android:text="消息"
+                    android:textColor="@color/main_botton_text_color"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btn_container5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btn5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:drawableTop="@drawable/tab_main_mine_bg"
+                    android:onClick="onTabClicked"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="5dp"
+                    android:scaleType="matrix"
+                    android:text="我的"
+                    android:textColor="@color/main_botton_text_color"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
 
 
 
 
-</RelativeLayout>
+    </RelativeLayout>
+</layout>

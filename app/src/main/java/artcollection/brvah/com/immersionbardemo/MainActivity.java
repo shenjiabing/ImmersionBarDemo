@@ -1,5 +1,6 @@
 package artcollection.brvah.com.immersionbardemo;
 
+import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -9,6 +10,8 @@ import android.view.View;
 import android.widget.Button;
 
 import com.blankj.utilcode.util.ToastUtils;
+
+import artcollection.brvah.com.immersionbardemo.databinding.MainActivityBinding;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,11 +23,12 @@ public class MainActivity extends AppCompatActivity {
     // 再点一次退出程序时间设置
     private static final long WAIT_TIME = 2000L;
     private long TOUCH_TIME = 0;
-
+    MainActivityBinding mBinding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main_activity);
+//        setContentView(R.layout.main_activity);
+        mBinding=DataBindingUtil.setContentView(this,R.layout.main_activity);
         findViewById();
         AFragment aFragment=new AFragment();
         BFragment bFragment=new BFragment();
@@ -35,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction()
                 .add(R.id.fragment_container, aFragment).show(aFragment)
                 .commit();
+        mBinding.btn1.setText("测试");
     }
 
 
